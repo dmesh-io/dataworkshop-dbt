@@ -1,0 +1,8 @@
+sources:
+  - name: bronze_layer
+    database: "{{ var('source_catalog', 'default') }}"
+    schema: bronze
+    tables:
+      - name: car_stock
+      - name: customers
+      - name: car_sales

@@ -1,0 +1,50 @@
+version: 2
+
+models:
+  - name: cars
+    description: "Model representing car stock details"
+    columns:
+      - name: car_id
+        description: "Unique identifier for the car"
+      - name: brand
+        description: "Brand of the car"
+      - name: price
+        description: "Price of the car"
+      - name: body
+        description: "Body type of the car"
+      - name: mileage
+        description: "Mileage of the car"
+      - name: engine_v
+        description: "Engine volume of the car"
+      - name: engine_type
+        description: "Type of engine (e.g., gasoline, diesel)"
+      - name: registration
+        description: "Car registration number"
+      - name: year
+        description: "Manufacturing year of the car"
+      - name: model
+        description: "Model of the car"
+
+  - name: sales
+    description: "Model representing car sales transactions"
+    columns:
+      - name: sale_id
+        description: "Unique identifier for the sale transaction"
+      - name: customer_id
+        description: "Unique identifier for the customer"
+      - name: car_id
+        description: "Unique identifier for the car being sold"
+      - name: sale_datetime
+        description: "Timestamp of the sale transaction"
+
+  - name: customers
+    description: "Model representing customer details"
+    columns:
+      - name: customer_id
+        description: "Unique identifier for the customer"
+      - name: first_name
+        description: "First name of the customer"
+      - name: last_name
+        description: "Last name of the customer"
+      - name: address
+        description: "Address of the customer"
