@@ -18,7 +18,7 @@ join_car_data as (
 
 select
   sale_id,
-  sale_datetime,
+  to_timestamp(sale_datetime, 'yyyy-MM-dd HH:mm:ss.SSSSSS') as sale_datetime,
   first_name,
   last_name,
   address,
